@@ -1,14 +1,14 @@
 class Matrix {
-    constructor(rowNum, columsNum) {
-        this.matrix = this.generateMatrix(rowNum, columsNum)
+    constructor(rowNum, culomsNum) {
+        this.matrix = this.generateMatrix(rowNum, culomsNum)
     }
 
-    generateMatrix(rowNum, columsNum) {
+    generateMatrix(rowNum, culomsNum) {
         let matrix = []
         let num = 1
         for (let i = 0; i < rowNum; i++) {
             let row = []
-            for (let j = 0; j < columsNum; j++)
+            for (let j = 0; j < culomsNum; j++)
                 row.push(num++)
             matrix.push(row)
         }
@@ -19,9 +19,9 @@ class Matrix {
             console.log(this.matrix[rowNum][i])
         }
     }
-    printColumn(columsNum) {
+    printColumn(culomsNum) {
         for (let i = 0; i < this.matrix.length; i++) {
-            console.log(this.matrix[i][columsNum])
+            console.log(this.matrix[i][culomsNum])
         }
     }
     print() {
@@ -33,14 +33,14 @@ class Matrix {
             console.log(line)
         }
     }
-    alter(rowNum, columsNum, updateNum) {
-        if (this.matrix[rowNum][columsNum] == undefined || null)
+    alter(rowNum, culomsNum, updateNum) {
+        if (this.matrix[rowNum][culomsNum] == undefined || null)
             return
-        this.matrix[rowNum][columsNum] = updateNum
+        this.matrix[rowNum][culomsNum] = updateNum
     }
-    get(rowNum, columsNum) {
+    get(rowNum, culomsNum) {
         try {
-            return this.matrix[rowNum][columsNum]
+            return this.matrix[rowNum][culomsNum]
         }
         catch (err) {
             return undefined

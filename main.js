@@ -52,4 +52,18 @@ $(".start").on("click", function () {
     let columSize = $(".columnInput").val()
     board.loadBoard(rawSize, columSize)
     render.renderBoard(board.getMatrix(), board.getPoints())
+
+    let time = 0
+    const timer = function(){
+    
+    
+        setTimeout(() => {
+            let timerDiv = document.getElementById("timer");
+            time++;
+            timerDiv.innerHTML = time;
+            timer();
+        }, 1000);
+    }
+
+
 })

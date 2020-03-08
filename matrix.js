@@ -48,14 +48,14 @@ class Matrix {
     }
     findCoordinate(value) {
         for (let i = 0; i < this.matrix.length; i++)
-            for (let j = 0; j < this.matrix[i].length; j++)//?
+            for (let j = 0; j < this.matrix[i].length; j++)
             {
                 if (this.matrix[i][j] === value) {
                     let obj = { x: j, y: i }
                     return obj;
                 }
             }
-        console.log('dfsfd')
+        console.log('blablabla')
     }
 }
 

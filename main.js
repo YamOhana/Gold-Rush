@@ -1,4 +1,3 @@
-// const Goldrush = require('./goldrush')
 
 
 const render = new Renderer()

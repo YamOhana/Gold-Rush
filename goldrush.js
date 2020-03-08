@@ -1,20 +1,16 @@
-// const Matrix = require('./matrix')
 
 
 class GoldRush extends Matrix {
     constructor() {
         super()
-        // this.loadBoard()
         this.playerPoints = {}
     }
     loadBoard(rowNum, columsNum) {
+
+        //started with hardcoding
+
         this.playerPoints = {}
         this.matrix = this.generateMatrix(rowNum, columsNum)
-        // this.matrix = [[1, ".", ".", ".", "."],
-        //                [".", ".", ".", ".", "."],
-        //                [".", ".", ".", ".", "."],
-        //                [".", ".", ".", ".", "."],
-        //                [".", ".", ".", ".", 2]]
         for (let i = 0; i < rowNum; i++) {
             for (let j = 0; j < columsNum; j++) {
                 this.matrix[i][j] = "."
@@ -78,6 +74,8 @@ class GoldRush extends Matrix {
             return false
         else
             return false
+        
+        
     }
     getPlayerPoints(player) {
         return this.playerPoints[player] ? this.playerPoints[player] : 0
@@ -90,4 +88,9 @@ class GoldRush extends Matrix {
         return this.matrix
     }
 
+
+    
+
 }
+
+

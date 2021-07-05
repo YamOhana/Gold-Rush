@@ -1,0 +1,26 @@
+{
+  "name": "gold-rush",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YamOhana/Gold-Rush.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YamOhana/Gold-Rush/issues"
+  },
+  "homepage": "https://github.com/YamOhana/Gold-Rush#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.3",
+    "jquery": "^3.5.0",
+    "request": "^2.88.2"
+  }
+}
